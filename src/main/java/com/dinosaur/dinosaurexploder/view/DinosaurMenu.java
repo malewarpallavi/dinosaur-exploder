@@ -239,6 +239,7 @@ public class DinosaurMenu extends FXGLMenu {
         event -> {
           badge.setScaleX(1.0);
           badge.setScaleY(1.0);
+          badge.setCursor(javafx.scene.Cursor.DEFAULT);
         });
 
     return badge;

@@ -346,13 +346,15 @@ public class CreditsMenu extends FXGLMenu {
         });
 
     box.setOnMouseExited(
-        e ->
-            box.setStyle(
-                "-fx-background-color: rgba(0, 0, 0, 0.8);"
-                    + "-fx-background-radius: 10;"
-                    + "-fx-border-color: rgba(0, 220, 0, 0.5);"
-                    + "-fx-border-width: 1;"
-                    + "-fx-border-radius: 10;"));
+        e -> {
+          box.setStyle(
+              "-fx-background-color: rgba(0, 0, 0, 0.8);"
+                  + "-fx-background-radius: 10;"
+                  + "-fx-border-color: rgba(0, 220, 0, 0.5);"
+                  + "-fx-border-width: 1;"
+                  + "-fx-border-radius: 10;");
+          box.setCursor(javafx.scene.Cursor.DEFAULT);
+        });
   }
 
   private void loadAvatarAsync(String avatarUrl, ImageView avatarView) {
